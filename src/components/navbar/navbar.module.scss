@@ -1,0 +1,32 @@
+.container {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.links {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.logout {
+  font-family: Inter, sans-serif;
+  font-size: 16px;
+  padding: 5px 10px;
+  border: none;
+  background-color: cornflowerblue;
+  color: aliceblue;
+  cursor: pointer;
+  border-radius: 3px;
+  transition: opacity .4s ease;
+  &:hover {
+    opacity: 0.8;
+  }
+}
