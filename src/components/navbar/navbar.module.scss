@@ -1,3 +1,4 @@
+
 .container {
   height: 60px;
   display: flex;
@@ -21,12 +22,13 @@
   font-size: 16px;
   padding: 5px 10px;
   border: none;
-  background-color: cornflowerblue;
-  color: aliceblue;
+  background-color: aliceblue;
+  color: cornflowerblue;
   cursor: pointer;
   border-radius: 3px;
-  transition: opacity .4s ease;
+  transition: all .4s ease;
   &:hover {
-    opacity: 0.8;
+    color: aliceblue;
+    background-color: cornflowerblue;
   }
 }

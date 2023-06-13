@@ -7,3 +7,25 @@
 .rights {
   font-size: 14px;
 }
+.socials {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.socialLink {
+  svg {
+    width: 26px;
+    height: 26px;
+    path {
+      transition: fill .4s ease;
+      fill: aliceblue;
+    }
+  }
+  &:hover {
+    svg {
+      path {
+        fill: cornflowerblue;
+      }
+    }
+  }
+}
