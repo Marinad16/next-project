@@ -51,7 +51,7 @@ const projects = [
         image: "harvest.png"
     },
     {
-        id: 5,
+        id: 6,
         slug: "download-center",
         title: "Download Center",
         about: "Download Center for IEC Telecom company.",
@@ -67,8 +67,8 @@ const Portfolio = () => {
             <h1>My Works</h1>
             <div className={styles.list}>
                 {projects.map(project => (
-                    <Link  href={`/portfolio/${project.slug}`} className={styles.item}>
-                        <Image src={BabyFit} className={styles.image}/>
+                    <Link href={`/portfolio/${project.slug}`} className={styles.item} key={project.slug}>
+                        <Image src={BabyFit} className={styles.image} alt={project.title}/>
                         <h3 className={styles.title}>Project</h3>
                     </Link>
                 ))}

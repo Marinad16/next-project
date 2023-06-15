@@ -29,3 +29,21 @@
     }
   }
 }
+
+.socialLink {
+  svg {
+    width: 26px;
+    height: 26px;
+    path {
+      transition: fill .4s ease;
+      fill: aliceblue;
+    }
+  }
+  &:hover {
+    svg {
+      path {
+        fill: cornflowerblue;
+      }
+    }
+  }
+}
