@@ -24,6 +24,11 @@ const links = [
         title: "Contacts",
         url: "/contact"
     },
+    {
+        id: 5,
+        title: "Dashboard",
+        url: "/dashborad"
+    },
 ]
 
 
