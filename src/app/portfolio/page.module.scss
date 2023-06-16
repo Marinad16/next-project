@@ -20,9 +20,10 @@
   &:hover {
     .image {
       transform: scale(1.05);
+      opacity: 0.4;
     }
     .title {
-      color: cornflowerblue;
+      color: aliceblue;
     }
   }
 }
@@ -32,12 +33,12 @@
   height: 100%;
   object-fit: cover;
   transition: all .5s ease;
-  -webkit-filter: grayscale(100%);
-  filter: grayscale(100%);
 }
 
 .title {
-  font-size: 48px;
+  text-align: center;
+  width: 100%;
+  font-size: 44px;
   font-weight: 600;
   color: transparent;
   position: absolute;

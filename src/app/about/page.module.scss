@@ -26,14 +26,17 @@
 
 .imageContainer {
   width: 100%;
-  height: 400px;
-  position: relative;
+  height: 300px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   img {
-    width: 100%;
+
+    width: 50%;
     height: 100%;
     object-fit: contain;
-    object-position: right;
-    animation: move 3s infinite ease alternate;
+
+    //animation: move 3s infinite ease alternate;
   }
 }
 
@@ -47,9 +50,7 @@
 }
 
 .imageText {
-  position: absolute;
-  top: 50%;
-  left: 0;
+  width: 50%;
   h1 {
     font-size: 62px;
     background: linear-gradient(to bottom, #6495EDFF, #F0F8FFFF);

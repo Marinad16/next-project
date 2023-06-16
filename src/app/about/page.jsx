@@ -1,18 +1,18 @@
 import React from "react";
 import styles from "./page.module.scss"
 import Image from "next/image";
-import AboutImage from "../../../public/about-bg.png"
+import AboutImage from "../../../public/marina.png"
 import Button from "@/components/Button/Button";
 
 const About = () => {
   return (
       <div className={styles.container}>
           <div className={styles.imageContainer}>
-              <Image src={AboutImage} alt="" />
               <div className={styles.imageText}>
                   <h1>DUBYNA MARYNA</h1>
                   <h2>Front-end (React) Developer</h2>
               </div>
+              <Image src={AboutImage} alt="" />
           </div>
           <div className={styles.aboutContainer}>
               <div>
