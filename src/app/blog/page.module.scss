@@ -1,0 +1,26 @@
+.container {
+  margin: 50px 0;
+  h1 {
+    font-size: 52px;
+    text-align: center;
+  }
+}
+
+.listContainer {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.item {
+  display: flex;
+  gap: 20px;
+}
+
+.details {
+  h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+}
