@@ -22,7 +22,7 @@ const Blog = async () => {
             <h1>Blog</h1>
             <div className={styles.listContainer}>
                 {data.map(item => (
-                    <Link href="/blog/id" className={styles.item} key={item.id}>
+                    <Link href={`/blog/${item.id}`} className={styles.item} key={item.id}>
                         <div className={styles.imageContainer}>
                             <Image src="https://picsum.photos/200/300" width={400} height={300} alt=""/>
                         </div>

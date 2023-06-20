@@ -4,7 +4,7 @@ import React, {useContext} from "react";
 import styles from "./darkMode.module.scss";
 import MoonIcon from "@/components/icons/Moon";
 import SunIcon from "@/components/icons/Sun";
-import {ThemeContext} from "../../../context/ThemeContext";
+import {ThemeContext} from "../../context/ThemeContext";
 
 const DarkMode = () => {
     const {toggleMode, mode} = useContext(ThemeContext);
