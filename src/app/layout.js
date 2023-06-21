@@ -4,6 +4,7 @@ import Navbar from "@/components/navbar/Navbar";
 import Footer from "@/components/footer/Footer";
 import '../styles/_variables.scss';
 import {ThemeProvider} from "../context/ThemeContext";
+import {SessionProvider} from "next-auth/react";
 
 const inter = Inter({subsets: ['latin']})
 
@@ -17,11 +18,13 @@ export default function RootLayout({children}) {
         <html lang="en">
             <body className={inter.className}>
             <ThemeProvider >
-                <div className="container">
-                    <Navbar/>
-                    {children}
-                    <Footer/>
-                </div>
+                <SessionProvider>
+                    <div className="container">
+                        <Navbar/>
+                        {children}
+                        <Footer/>
+                    </div>
+                </SessionProvider>
             </ThemeProvider>
             </body>
         </html>

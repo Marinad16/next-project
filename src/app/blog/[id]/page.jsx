@@ -14,7 +14,7 @@ async function getData(id) {
     return res.json();
 }
 
-const Post = async ({params}) => {
+const PostItem = async ({params}) => {
     const data = await getData(params.id)
     return (
         <div className={styles.container}>
@@ -29,4 +29,4 @@ const Post = async ({params}) => {
     )
 }
 
-export default Post;
+export default PostItem;
